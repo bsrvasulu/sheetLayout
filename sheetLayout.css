@@ -1,0 +1,204 @@
+.axis {
+  fill: none;
+  stroke: #aaa;
+  stroke-width: 1px;
+}
+
+.disk_present{
+  fill: none;
+  stroke: #aaf;
+  stroke-width: 1px;
+}
+
+.disk_present_XA_back{
+  fill: none;
+  stroke: #0099c6;
+  stroke-width: 1px;
+}
+.disk_present_XA_front{
+  fill: none;
+  stroke: #0099c6;
+  stroke-width: 1px;
+}
+
+.disk_present_a2_back{
+  fill: none;
+  stroke: #ff9900;
+  stroke-width: 1px;
+}
+
+.disk_present_XC_front{
+  fill: none;
+  stroke: #ff9900;
+  stroke-width: 1px;
+}
+
+.disk_present_XC_back{
+  fill: none;
+  stroke: #ff9900;
+  stroke-width: 1px;
+}
+
+.disk_present_XB_back{
+  fill: none;
+  stroke: #aaaa11;
+  stroke-width: 1px;
+}
+
+.disk_present_XB_front{
+  fill: none;
+  stroke: #aaaa11;
+  stroke-width: 1px;
+}
+
+.disk_present_XD_back{
+  fill: none;
+  stroke: #3366cc;
+  stroke-width: 1px;
+}
+
+.disk_present_XD_front{
+  fill: none;
+  stroke: #3366cc;
+  stroke-width: 1px;
+}
+
+.disk_not_present{
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2px;
+}
+
+.disable {
+  fill: none;
+  stroke: #aaa;
+  display: none;
+  stroke-width: 1px;
+}
+
+.axis2 {
+
+}
+
+body {
+  font-family: sans-serif;
+}
+
+
+.point {
+  mix-blend-mode: multiply;
+}
+
+.circle_margin{
+  padding: 2px;
+}
+
+.frame {
+    fill: none;
+    stroke: #000;
+  }
+  
+  .axis text {
+    font: 10px sans-serif;
+  }
+  
+.axis line {
+  fill: none;
+  stroke: #ebebeb;
+}
+  
+.axis circle {
+  fill: none;
+  stroke: #aaa;
+  
+  //stroke-dasharray: 4;
+}
+ .axis circlePoint {
+  fill: none;
+  stroke: #aaa;
+  
+  //stroke-dasharray: 4;
+} 
+  .axis:last-of-type circle {
+    //stroke: #333;
+    //stroke-dasharray: none;
+  }
+  .axis:last-of-type circlePoint {
+    //stroke: #333;
+    //stroke-dasharray: none;
+  }
+
+  .line {
+    fill: none;
+    stroke: orange;
+    //stroke-width: 3px;
+  }
+
+div.tooltip {	
+    position: absolute;			
+    text-align: center;			
+    /*width: 60px;					
+    height: 28px;*/					
+    padding: 5px;				
+    font: 14px sans-serif;		
+    background: #ffaa00;	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;			
+}
+
+.brushed {
+  fill: #ff3399;
+/*   stroke: #8e1b54; */
+  opacity: 1.0;
+}
+
+.redBrushed {
+  fill: red;
+/*   stroke: #8e1b54; */
+  opacity: 1.0;
+}
+
+.greenBrushed {
+  fill: green;
+/*   stroke: #8e1b54; */
+  opacity: 1.0;
+}
+
+.non_brushed {
+  fill: #404040;
+  opacity: 0.5;
+}
+
+.brush rect.extent {
+  fill: steelblue;
+  fill-opacity: .01;
+}
+
+.curlyBrace {
+			stroke: #aaa;
+			stroke-width: 1px;
+			fill: none;
+		}
+
+.curlyBrace_XD {
+			stroke: #0099c6;
+			stroke-width: 1px;
+			fill: none;
+		}
+
+.curlyBrace_XC {
+			stroke: #ff9900;
+			stroke-width: 1px;
+			fill: none;
+		}
+.curlyBrace_XB {
+			stroke: #aaaa11;
+			stroke-width: 1px;
+			fill: none;
+		}
+.curlyBrace_XA {
+			stroke: #0099c6;
+			stroke-width: 1px;
+			fill: none;
+		}
