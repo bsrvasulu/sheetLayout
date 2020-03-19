@@ -1,4 +1,4 @@
-//include js - https://d3js.org/d3.v4.min.js
+//https://d3js.org/d3.v4.min.js
 var margin = margin = {top: -5, right: -5, bottom: -5, left: -5}
     width = 1200 - margin.left - margin.right,
     height = 1200 - margin.top - margin.bottom,
@@ -205,7 +205,7 @@ container.append("line")
     .attr("y2", 800);    // y position of the second end of the line
 
 container.append("g").selectAll('text')
-  .data([['XA', 490, 550, 450, 'disk_present_XA_front'], ['XB', 225, 550, 450, 'disk_present_XB_front'], ['XC', 25, 550, 450, 'disk_present_XC_front'], ['XD', -185, 550, 450, 'disk_present_XD_front']])
+  .data([['A1', 490, 550, 450, 'disk_present_XA_front'], ['A2', 225, 550, 450, 'disk_present_XB_front'], ['A3', 25, 550, 450, 'disk_present_XC_front'], ['A4', -185, 550, 450, 'disk_present_XD_front']])
   .enter()
   .append("text")    
     .attr("transform", function(d){return "translate("+d[1]+","+d[2]+") rotate(45)"})
@@ -245,7 +245,7 @@ container.append("line")
     .attr("y2", 800);    // y position of the second end of the 
 
 container.append("g").selectAll('text')
-  .data([['Front', 750, 330, 400], ['Rear', 750,-60, 400]])
+  .data([['Front', 750, 330, 400], ['Back', 750,-60, 400]])
   .enter()
   .append("text")    
     .attr("transform", function(d){return "translate("+d[1]+","+d[2]+") rotate(45)"})
@@ -503,4 +503,122 @@ function updateChipData(chipData)
       reader.readAsText(input.files[0]);
     }
     
+// Below are the functions that handle actual exporting:
+// getSVGString ( svgNode ) and svgString2Image( svgString, width, height, format, callback )
+function getSVGString( svgNode ) {
+	svgNode.setAttribute('xlink', 'http://www.w3.org/1999/xlink');
+	var cssStyleText = getCSSStyles( svgNode );
+	appendCSS( cssStyleText, svgNode );
+
+	var serializer = new XMLSerializer();
+	var svgString = serializer.serializeToString(svgNode);
+	svgString = svgString.replace(/(\w+)?:?xlink=/g, 'xmlns:xlink='); // Fix root xlink without namespace
+	svgString = svgString.replace(/NS\d+:href/g, 'xlink:href'); // Safari NS namespace fix
+
+	return svgString;
+
+	function getCSSStyles( parentElement ) {
+		var selectorTextArr = [];
+
+		// Add Parent element Id and Classes to the list
+		selectorTextArr.push( '#'+parentElement.id );
+		for (var c = 0; c < parentElement.classList.length; c++)
+				if ( !contains('.'+parentElement.classList[c], selectorTextArr) )
+					selectorTextArr.push( '.'+parentElement.classList[c] );
+
+		// Add Children element Ids and Classes to the list
+		var nodes = parentElement.getElementsByTagName("*");
+		for (var i = 0; i < nodes.length; i++) {
+			var id = nodes[i].id;
+			if ( !contains('#'+id, selectorTextArr) )
+				selectorTextArr.push( '#'+id );
+
+			var classes = nodes[i].classList;
+			for (var c = 0; c < classes.length; c++)
+				if ( !contains('.'+classes[c], selectorTextArr) )
+					selectorTextArr.push( '.'+classes[c] );
+		}
+
+		// Extract CSS Rules
+		var extractedCSSText = "";
+		for (var i = 0; i < document.styleSheets.length; i++) {
+			var s = document.styleSheets[i];
+			
+			try {
+			    if(!s.cssRules) continue;
+			} catch( e ) {
+		    		if(e.name !== 'SecurityError') throw e; // for Firefox
+		    		continue;
+		    	}
+
+			var cssRules = s.cssRules;
+			for (var r = 0; r < cssRules.length; r++) {
+				if ( contains( cssRules[r].selectorText, selectorTextArr ) )
+					extractedCSSText += cssRules[r].cssText;
+			}
+		}
+		
+
+		return extractedCSSText;
+
+		function contains(str,arr) {
+			return arr.indexOf( str ) === -1 ? false : true;
+		}
+
+	}
+
+	function appendCSS( cssText, element ) {
+		var styleElement = document.createElement("style");
+		styleElement.setAttribute("type","text/css"); 
+		styleElement.innerHTML = cssText;
+		var refNode = element.hasChildNodes() ? element.children[0] : null;
+		element.insertBefore( styleElement, refNode );
+	}
+}
     
+    
+    
+    d3.select('#export').on('click', function(){
+	var svgString = getSVGString(svg.node());
+	svgString2Image( svgString, 2*width, 2*height, 'png', save ); // passes Blob and filesize String to the callback
+
+	function save( dataBlob, filesize ){
+		saveAs( dataBlob, 'D3 vis exported to PNG.png' ); // FileSaver.js function
+	}
+      
+      
+    });
+
+function svgString2Image( svgString, width, height, format, callback ) {
+	      var doctype = '<?xml version="1.0" standalone="no"?>'
+             + '<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">';
+var source = getSVGString(d3.select('svg').node());
+      
+// var source = (new XMLSerializer()).serializeToString(d3.select('svg').node());
+var blob = new Blob([ doctype + source], { type: 'image/svg+xml' });
+
+var url = window.URL.createObjectURL(blob);
+var image = new Image();
+  image.onerror = function() {
+    console.log('An error occurred while attempting to load SVG');
+  };
+	var canvas = document.createElement("canvas");
+	var context = canvas.getContext("2d");
+
+	canvas.width = width;
+	canvas.height = height;
+
+	image.onload = function() {
+		context.clearRect ( 0, 0, width, height );
+		context.drawImage(image, 0, 0, width, height);
+
+		canvas.toBlob( function(blob) {
+			var filesize = Math.round( blob.length/1024 ) + ' KB';
+			if ( callback ) callback( blob, filesize );
+		});
+
+		
+	};
+
+	image.src = url;
+}
