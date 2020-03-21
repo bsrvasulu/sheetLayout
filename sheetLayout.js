@@ -78,91 +78,91 @@ var disk_ref = {
 	'XA_20':[100, 750], 
 	'XA_19':[100, 850],
 	
-	'XD_14':[190, 100],
-	'XD_13':[190, 200], 
-	'XC_14':[190, 300], 
-	'XC_13':[190, 400],
-	'XB_14':[190, 500],
-	'XB_13':[190, 600], 
-	'XA_17':[190, 700], 
-	'XA_16':[190, 800],
-	'XA_18':[190, 900],
+	'XD_14':[187, 100],
+	'XD_13':[187, 200], 
+	'XC_14':[187, 300], 
+	'XC_13':[187, 400],
+	'XB_14':[187, 500],
+	'XB_13':[187, 600], 
+	'XA_17':[187, 700], 
+	'XA_16':[187, 800],
+	'XA_18':[187, 900],
 	
-	'XD_12':[280, 150],
-	'XD_11':[280, 250], 
-	'XC_12':[280, 350], 
-	'XC_11':[280, 450],
-	'XB_12':[280, 550],
-	'XB_11':[280, 650], 
-	'XA_15':[280, 750], 
-	'XA_14':[280, 850],	
+	'XD_12':[274, 150],
+	'XD_11':[274, 250], 
+	'XC_12':[274, 350], 
+	'XC_11':[274, 450],
+	'XB_12':[274, 550],
+	'XB_11':[274, 650], 
+	'XA_15':[274, 750], 
+	'XA_14':[274, 850],	
  
-	'XD_10':[370, 100],
-	'XD_9':[370, 200], 
-	'XC_10':[370, 300], 
-	'XC_9':[370, 400],
-	'XB_10':[370, 500],
-	'XB_9':[370, 600], 
-	'XA_12':[370, 700], 
-	'XA_11':[370, 800],
-	'XA_13':[370, 900], 
+	'XD_10':[361, 100],
+	'XD_9':[361, 200], 
+	'XC_10':[361, 300], 
+	'XC_9':[361, 400],
+	'XB_10':[361, 500],
+	'XB_9':[361, 600], 
+	'XA_12':[361, 700], 
+	'XA_11':[361, 800],
+	'XA_13':[361, 900], 
 	
-	'XD_8':[460, 150],
-	'XD_7':[460, 250], 
-	'XC_8':[460, 350], 
-	'XC_7':[460, 450],
-	'XB_8':[460, 550],
-	'XB_7':[460, 650], 
-	'XA_10':[460, 750], 
-	'XA_9':[460, 850],		
+	'XD_8':[448, 150],
+	'XD_7':[448, 250], 
+	'XC_8':[448, 350], 
+	'XC_7':[448, 450],
+	'XB_8':[448, 550],
+	'XB_7':[448, 650], 
+	'XA_10':[448, 750], 
+	'XA_9':[448, 850],		
 
-	'XD_6':[550, 100],
-	'XD_5':[550, 200], 
-	'XC_6':[550, 300], 
-	'XC_5':[550, 400],
-	'XB_6':[550, 500],
-	'XB_5':[550, 600], 
-	'XA_7':[550, 700], 
-	'XA_6':[550, 800],
-	'XA_8':[550, 900],           
+	'XD_6':[535, 100],
+	'XD_5':[535, 200], 
+	'XC_6':[535, 300], 
+	'XC_5':[535, 400],
+	'XB_6':[535, 500],
+	'XB_5':[535, 600], 
+	'XA_7':[535, 700], 
+	'XA_6':[535, 800],
+	'XA_8':[535, 900],           
  
-	'XD_4':[640, 150],
-	'XD_3':[640, 250], 
-	'XC_4':[640, 350], 
-	'XC_3':[640, 450],
-	'XB_4':[640, 550],
-	'XB_3':[640, 650], 
-	'XA_5':[640, 750], 
-	'XA_4':[640, 850], 
+	'XD_4':[622, 150],
+	'XD_3':[622, 250], 
+	'XC_4':[622, 350], 
+	'XC_3':[622, 450],
+	'XB_4':[622, 550],
+	'XB_3':[622, 650], 
+	'XA_5':[622, 750], 
+	'XA_4':[622, 850], 
  
-	'XD_2':[730, 100],
-	'XD_1':[730, 200], 
-	'XC_2':[730, 300], 
-	'XC_1':[730, 400],
-	'XB_2':[730, 500],
-	'XB_1':[730, 600], 
-	'XA_2':[730, 700], 
-	'XA_1':[730, 800],
-	'XA_3':[730, 900]
+	'XD_2':[709, 100],
+	'XD_1':[709, 200], 
+	'XC_2':[709, 300], 
+	'XC_1':[709, 400],
+	'XB_2':[709, 500],
+	'XB_1':[709, 600], 
+	'XA_2':[709, 700], 
+	'XA_1':[709, 800],
+	'XA_3':[709, 900]
 };
 
 container.append("g")    
     .selectAll("circle")
     .data([[100, 150, 50, 'disk_present_XD_back'], [100, 250, 50, 'disk_present_XD_back'], [100, 350, 50, 'disk_present_XC_back'], [100, 450, 50, 'disk_present_XC_back'], [100, 550, 50, 'disk_present_XB_back'], [100, 650, 50, 'disk_present_XB_back'], [100,750, 50, 'disk_present_XA_back'], [100, 850, 50, 'disk_present_XA_back'], [100, 150, 20, 'disk_present_XD_back'], [100, 250, 20, 'disk_present_XD_back'], [100, 350, 20, 'disk_present_XC_back'], [100, 450, 20, 'disk_present_XC_back'], [100, 550, 20, 'disk_present_XB_back'], [100, 650, 20, 'disk_present_XB_back'], [100,750, 20, 'disk_present_XA_back'], [100, 850, 20, 'disk_present_XA_back'],          
 
-           [190, 100, 50, 'disk_present_XD_back'], [190, 200, 50, 'disk_present_XD_back'], [190, 300, 50, 'disk_present_XC_back'], [190, 400, 50, 'disk_present_XC_back'], [190, 500, 50, 'disk_present_XB_back'], [190, 600, 50, 'disk_present_XB_back'], [190,700, 50, 'disk_present_XA_back'], [190, 800, 50, 'disk_present_XA_back'], [190, 900, 50, 'disk_present_XA_back'],[190, 100, 20, 'disk_present_XD_back'], [190, 200, 20, 'disk_present_XD_back'], [190, 300, 20, 'disk_present_XC_back'], [190, 400, 20, 'disk_present_XC_back'], [190, 500, 20, 'disk_present_XB_back'], [190, 600, 20, 'disk_present_XB_back'], [190,700, 20, 'disk_present_XA_back'], [190, 800, 20, 'disk_present_XA_back'],  [190, 900, 20, 'disk_present_XA_back'],
+           [187, 100, 50, 'disk_present_XD_back'], [187, 200, 50, 'disk_present_XD_back'], [187, 300, 50, 'disk_present_XC_back'], [187, 400, 50, 'disk_present_XC_back'], [187, 500, 50, 'disk_present_XB_back'], [187, 600, 50, 'disk_present_XB_back'], [187,700, 50, 'disk_present_XA_back'], [187, 800, 50, 'disk_present_XA_back'], [187, 900, 50, 'disk_present_XA_back'],[187, 100, 20, 'disk_present_XD_back'], [187, 200, 20, 'disk_present_XD_back'], [187, 300, 20, 'disk_present_XC_back'], [187, 400, 20, 'disk_present_XC_back'], [187, 500, 20, 'disk_present_XB_back'], [187, 600, 20, 'disk_present_XB_back'], [187,700, 20, 'disk_present_XA_back'], [187, 800, 20, 'disk_present_XA_back'],  [187, 900, 20, 'disk_present_XA_back'],
            
-[280, 150, 50, 'disk_present_XD_back'], [280, 250, 50, 'disk_present_XD_back'], [280, 350, 50, 'disk_present_XC_back'], [280, 450, 50, 'disk_present_XC_back'], [280, 550, 50, 'disk_present_XB_back'], [280, 650, 50, 'disk_present_XB_back'], [280,750, 50, 'disk_present_XA_back'], [280, 850, 50, 'disk_present_XA_back'], [280, 150, 20, 'disk_present_XD_back'], [280, 250, 20, 'disk_present_XD_back'], [280, 350, 20, 'disk_present_XC_back'], [280, 450, 20, 'disk_present_XC_back'], [280, 550, 20, 'disk_present_XB_back'], [280, 650, 20, 'disk_present_XB_back'], [280,750, 20, 'disk_present_XA_back'], [280, 850, 20, 'disk_present_XA_back'],  
+[274, 150, 50, 'disk_present_XD_back'], [274, 250, 50, 'disk_present_XD_back'], [274, 350, 50, 'disk_present_XC_back'], [274, 450, 50, 'disk_present_XC_back'], [274, 550, 50, 'disk_present_XB_back'], [274, 650, 50, 'disk_present_XB_back'], [274,750, 50, 'disk_present_XA_back'], [274, 850, 50, 'disk_present_XA_back'], [274, 150, 20, 'disk_present_XD_back'], [274, 250, 20, 'disk_present_XD_back'], [274, 350, 20, 'disk_present_XC_back'], [274, 450, 20, 'disk_present_XC_back'], [274, 550, 20, 'disk_present_XB_back'], [274, 650, 20, 'disk_present_XB_back'], [274,750, 20, 'disk_present_XA_back'], [274, 850, 20, 'disk_present_XA_back'],  
 
-[370, 100, 50, 'disk_present_XD_back'], [370, 200, 50, 'disk_present_XD_back'], [370, 300, 50, 'disk_present_XC_back'], [370, 400, 50, 'disk_present_XC_back'], [370, 500, 50, 'disk_present_XB_back'], [370, 600, 50, 'disk_present_XB_back'], [370,700, 50, 'disk_present_XA_back'], [370, 800, 50, 'disk_present_XA_back'], [370, 900, 50, 'disk_present_XA_back'],[370, 100, 20, 'disk_present_XD_back'], [370, 200, 20, 'disk_present_XD_back'], [370, 300, 20, 'disk_present_XC_back'], [370, 400, 20, 'disk_present_XC_back'], [370, 500, 20, 'disk_present_XB_back'], [370, 600, 20, 'disk_present_XB_back'], [370,700, 20, 'disk_present_XA_back'], [370, 800, 20, 'disk_present_XA_back'],  [370, 900, 20, 'disk_present_XA_back'], 
+[360, 100, 50, 'disk_present_XD_back'], [360, 200, 50, 'disk_present_XD_back'], [360, 300, 50, 'disk_present_XC_back'], [360, 400, 50, 'disk_present_XC_back'], [360, 500, 50, 'disk_present_XB_back'], [360, 600, 50, 'disk_present_XB_back'], [360,700, 50, 'disk_present_XA_back'], [360, 800, 50, 'disk_present_XA_back'], [360, 900, 50, 'disk_present_XA_back'],[360, 100, 20, 'disk_present_XD_back'], [360, 200, 20, 'disk_present_XD_back'], [360, 300, 20, 'disk_present_XC_back'], [360, 400, 20, 'disk_present_XC_back'], [360, 500, 20, 'disk_present_XB_back'], [360, 600, 20, 'disk_present_XB_back'], [360,700, 20, 'disk_present_XA_back'], [360, 800, 20, 'disk_present_XA_back'],  [360, 900, 20, 'disk_present_XA_back'], 
            
-[460, 150, 50, 'disk_present_XD_front'], [460, 250, 50, 'disk_present_XD_front'], [460, 350, 50, 'disk_present_XC_front'], [460, 450, 50, 'disk_present_XC_front'], [460, 550, 50, 'disk_present_XB_front'], [460, 650, 50, 'disk_present_XB_front'], [460,750, 50, 'disk_present_XA_front'], [460, 850, 50, 'disk_present_XA_front'], [460, 150, 20, 'disk_present_XD_front'], [460, 250, 20, 'disk_present_XD_front'], [460, 350, 20, 'disk_present_XC_front'], [460, 450, 20, 'disk_present_XC_front'], [460, 550, 20, 'disk_present_XB_front'], [460, 650, 20, 'disk_present_XB_front'], [460,750, 20, 'disk_present_XA_front'], [460, 850, 20, 'disk_present_XA_front'],   
+[448, 150, 50, 'disk_present_XD_front'], [448, 250, 50, 'disk_present_XD_front'], [448, 350, 50, 'disk_present_XC_front'], [448, 450, 50, 'disk_present_XC_front'], [448, 550, 50, 'disk_present_XB_front'], [448, 650, 50, 'disk_present_XB_front'], [448,750, 50, 'disk_present_XA_front'], [448, 850, 50, 'disk_present_XA_front'], [448, 150, 20, 'disk_present_XD_front'], [448, 250, 20, 'disk_present_XD_front'], [448, 350, 20, 'disk_present_XC_front'], [448, 450, 20, 'disk_present_XC_front'], [448, 550, 20, 'disk_present_XB_front'], [448, 650, 20, 'disk_present_XB_front'], [448,750, 20, 'disk_present_XA_front'], [448, 850, 20, 'disk_present_XA_front'],   
            
-[550, 100, 50, 'disk_present_XD_front'], [550, 200, 50, 'disk_present_XD_front'], [550, 300, 50, 'disk_present_XC_front'], [550, 400, 50, 'disk_present_XC_front'], [550, 500, 50, 'disk_present_XB_front'], [550, 600, 50, 'disk_present_XB_front'], [550,700, 50, 'disk_present_XA_front'], [550, 800, 50, 'disk_present_XA_front'], [550, 900, 50, 'disk_present_XA_front'],[550, 100, 20, 'disk_present_XD_front'], [550, 200, 20, 'disk_present_XD_front'], [550, 300, 20, 'disk_present_XC_front'], [550, 400, 20, 'disk_present_XC_front'], [550, 500, 20, 'disk_present_XB_front'], [550, 600, 20, 'disk_present_XB_front'], [550,700, 20, 'disk_present_XA_front'], [550, 800, 20, 'disk_present_XA_front'],  [550, 900, 20, 'disk_present_XA_front'],  
+[535, 100, 50, 'disk_present_XD_front'], [535, 200, 50, 'disk_present_XD_front'], [535, 300, 50, 'disk_present_XC_front'], [535, 400, 50, 'disk_present_XC_front'], [535, 500, 50, 'disk_present_XB_front'], [535, 600, 50, 'disk_present_XB_front'], [535,700, 50, 'disk_present_XA_front'], [535, 800, 50, 'disk_present_XA_front'], [535, 900, 50, 'disk_present_XA_front'],[535, 100, 20, 'disk_present_XD_front'], [535, 200, 20, 'disk_present_XD_front'], [535, 300, 20, 'disk_present_XC_front'], [535, 400, 20, 'disk_present_XC_front'], [535, 500, 20, 'disk_present_XB_front'], [535, 600, 20, 'disk_present_XB_front'], [535,700, 20, 'disk_present_XA_front'], [535, 800, 20, 'disk_present_XA_front'],  [535, 900, 20, 'disk_present_XA_front'],  
  
-[640, 150, 50, 'disk_present_XD_front'], [640, 250, 50, 'disk_present_XD_front'], [640, 350, 50, 'disk_present_XC_front'], [640, 450, 50, 'disk_present_XC_front'], [640, 550, 50, 'disk_present_XB_front'], [640, 650, 50, 'disk_present_XB_front'], [640,750, 50, 'disk_present_XA_front'], [640, 850, 50, 'disk_present_XA_front'], [640, 150, 20, 'disk_present_XD_front'], [640, 250, 20, 'disk_present_XD_front'], [640, 350, 20, 'disk_present_XC_front'], [640, 450, 20, 'disk_present_XC_front'], [640, 550, 20, 'disk_present_XB_front'], [640, 650, 20, 'disk_present_XB_front'], [640,750, 20, 'disk_present_XA_front'], [640, 850, 20, 'disk_present_XA_front'],   
+[622, 150, 50, 'disk_present_XD_front'], [622, 250, 50, 'disk_present_XD_front'], [622, 350, 50, 'disk_present_XC_front'], [622, 450, 50, 'disk_present_XC_front'], [622, 550, 50, 'disk_present_XB_front'], [622, 650, 50, 'disk_present_XB_front'], [622,750, 50, 'disk_present_XA_front'], [622, 850, 50, 'disk_present_XA_front'], [622, 150, 20, 'disk_present_XD_front'], [622, 250, 20, 'disk_present_XD_front'], [622, 350, 20, 'disk_present_XC_front'], [622, 450, 20, 'disk_present_XC_front'], [622, 550, 20, 'disk_present_XB_front'], [622, 650, 20, 'disk_present_XB_front'], [622,750, 20, 'disk_present_XA_front'], [622, 850, 20, 'disk_present_XA_front'],   
            
-[730, 100, 50, 'disk_present_XD_front'], [730, 200, 50, 'disk_present_XD_front'], [730, 300, 50, 'disk_present_XC_front'], [730, 400, 50, 'disk_present_XC_front'], [730, 500, 50, 'disk_present_XB_front'], [730, 600, 50, 'disk_present_XB_front'], [730,700, 50, 'disk_present_XA_front'], [730, 800, 50, 'disk_present_XA_front'], [730, 900, 50, 'disk_present_XA_front'],[730, 100, 20, 'disk_present_XD_front'], [730, 200, 20, 'disk_present_XD_front'], [730, 300, 20, 'disk_present_XC_front'], [730, 400, 20, 'disk_present_XC_front'], [730, 500, 20, 'disk_present_XB_front'], [730, 600, 20, 'disk_present_XB_front'], [730,700, 20, 'disk_present_XA_front'], [730, 800, 20, 'disk_present_XA_front'],  [730, 900, 20, 'disk_present_XA_front'] 
+[709, 100, 50, 'disk_present_XD_front'], [709, 200, 50, 'disk_present_XD_front'], [709, 300, 50, 'disk_present_XC_front'], [709, 400, 50, 'disk_present_XC_front'], [709, 500, 50, 'disk_present_XB_front'], [709, 600, 50, 'disk_present_XB_front'], [709,700, 50, 'disk_present_XA_front'], [709, 800, 50, 'disk_present_XA_front'], [709, 900, 50, 'disk_present_XA_front'],[709, 100, 20, 'disk_present_XD_front'], [709, 200, 20, 'disk_present_XD_front'], [709, 300, 20, 'disk_present_XC_front'], [709, 400, 20, 'disk_present_XC_front'], [709, 500, 20, 'disk_present_XB_front'], [709, 600, 20, 'disk_present_XB_front'], [709,700, 20, 'disk_present_XA_front'], [709, 800, 20, 'disk_present_XA_front'],  [709, 900, 20, 'disk_present_XA_front'] 
             
           ])
     .enter().append("circle")
@@ -174,19 +174,19 @@ container.append("g")
 container.selectAll('text')
   .data([['16', 72, 105], ['15', 122, 105], ['16', 172, 105], ['15', 222, 105], ['16', 272, 105], ['15', 322, 105], ['20', 372, 105], ['19', 422, 105],
          
-['14', 47, 195], ['13', 97, 195], ['14', 147, 195], ['13', 197, 195], ['14', 247, 195], ['13', 297, 195], ['17', 347, 195], ['16', 397, 195], ['19', 447, 195],     
+['14', 46, 192], ['13', 96, 192], ['14', 146, 192], ['13', 196, 192], ['14', 246, 192], ['13', 296, 192], ['17', 346, 192], ['16', 396, 192], ['19', 446, 192],     
 
-['12', 72, 285], ['11', 122, 285], ['12', 172, 285], ['11', 222, 285], ['12', 272, 285], ['11', 322, 285], ['15', 372, 285], ['14', 422, 285],
+['12', 72, 278], ['11', 122, 278], ['12', 172, 278], ['11', 222, 278], ['12', 272, 278], ['11', 322, 278], ['15', 372, 278], ['14', 422, 278],
  
-['10', 47, 375], ['9', 99, 375], ['10', 147, 375], ['9', 199, 375], ['10', 247, 375], ['9', 299, 375], ['12', 347, 375], ['11', 397, 375], ['13', 447, 375],  
+['10', 47, 366], ['9', 99, 366], ['10', 147, 366], ['9', 199, 366], ['10', 247, 366], ['9', 299, 366], ['12', 347, 366], ['11', 397, 366], ['13', 447, 366],  
 
-['8', 74, 465], ['7', 124, 465], ['8', 174, 465], ['7', 224, 465], ['8', 274, 465], ['7', 324, 465], ['10', 372, 465], ['9', 424, 465],
+['8', 74, 453], ['7', 124, 453], ['8', 174, 453], ['7', 224, 453], ['8', 274, 453], ['7', 324, 453], ['10', 372, 453], ['9', 424, 453],
 
-['6', 49, 555], ['5', 99, 555], ['6', 149, 555], ['5', 199, 555], ['6', 249, 555], ['5', 299, 555], ['7', 349, 555], ['6', 399, 555], ['8', 449, 555],     
+['6', 49, 540], ['5', 99, 540], ['6', 149, 540], ['5', 199, 540], ['6', 249, 540], ['5', 299, 540], ['7', 349, 540], ['6', 399, 540], ['8', 449, 540],     
 
-['4', 74, 645], ['3', 124, 645], ['4', 174, 645], ['3', 224, 645], ['4', 274, 645], ['3', 324, 645], ['5', 374, 645], ['4', 424, 645],
+['4', 74, 627], ['3', 124, 627], ['4', 174, 627], ['3', 224, 627], ['4', 274, 627], ['3', 324, 627], ['5', 374, 627], ['4', 424, 627],
          
-['2', 49, 735], ['1', 99, 735], ['2', 149, 735], ['1', 199, 735], ['2', 249, 735], ['1', 299, 735], ['2', 349, 735], ['1', 399, 735], ['3', 449, 735],          
+['2', 49, 714], ['1', 99, 714], ['2', 149, 714], ['1', 199, 714], ['2', 249, 714], ['1', 299, 714], ['2', 349, 714], ['1', 399, 714], ['3', 449, 714],          
         ])
   .enter()
   .append("text")    
@@ -200,12 +200,12 @@ container.selectAll('text')
 container.append("line")
     .style("stroke", "#aaa")  // colour the line
     .attr("x1", 20)     // x position of the first end of the line
-    .attr("y1", 800)      // y position of the first end of the line
+    .attr("y1", 780)      // y position of the first end of the line
     .attr("x2", 970)     // x position of the second end of the line
-    .attr("y2", 800);    // y position of the second end of the line
+    .attr("y2", 780);    // y position of the second end of the line
 
 container.append("g").selectAll('text')
-  .data([['A1', 490, 550, 450, 'disk_present_XA_front'], ['A2', 225, 550, 450, 'disk_present_XB_front'], ['A3', 25, 550, 450, 'disk_present_XC_front'], ['A4', -185, 550, 450, 'disk_present_XD_front']])
+  .data([['A1', 490, 525, 450, 'disk_present_XA_front'], ['A2', 225, 525, 450, 'disk_present_XB_front'], ['A3', 25, 525, 450, 'disk_present_XC_front'], ['A4', -185, 525, 450, 'disk_present_XD_front']])
   .enter()
   .append("text")    
     .attr("transform", function(d){return "translate("+d[1]+","+d[2]+") rotate(45)"})
@@ -219,9 +219,9 @@ container.append("line")
     .style("stroke", "#ff0000")  // colour the line
     .style("stroke-dasharray", ("5, 5"))
     .attr("x1", 20)     // x position of the first end of the line
-    .attr("y1", 415)      // y position of the first end of the line
+    .attr("y1", 404)      // y position of the first end of the line
     .attr("x2", 970)     // x position of the second end of the line
-    .attr("y2", 415);    // y position of the second end of the line
+    .attr("y2", 404);    // y position of the second end of the line
 
 container.append("line")
     .style("stroke", "#aaa")  // colour the line
@@ -235,17 +235,17 @@ container.append("line")
     .attr("x1", 20)     // x position of the first end of the line
     .attr("y1", 20)      // y position of the first end of the line
     .attr("x2", 20)     // x position of the second end of the line
-    .attr("y2", 800);    // y position of the second end of the line
+    .attr("y2", 780);    // y position of the second end of the line
 
 container.append("line")
     .style("stroke", "#aaa")  // colour the line
     .attr("x1", 970)     // x position of the first end of the line
     .attr("y1", 20)      // y position of the first end of the line
     .attr("x2", 970)     // x position of the second end of the line
-    .attr("y2", 800);    // y position of the second end of the 
+    .attr("y2", 780);    // y position of the second end of the 
 
 container.append("g").selectAll('text')
-  .data([['Front', 750, 330, 400], ['Back', 750,-60, 400]])
+  .data([['Front', 745, 315, 400], ['Back', 745,-65, 400]])
   .enter()
   .append("text")    
     .attr("transform", function(d){return "translate("+d[1]+","+d[2]+") rotate(45)"})
@@ -264,7 +264,7 @@ var line = d3.lineRadial()
       return d[0] * Math.PI / 180;
     });
 
-var pts = container.selectAll('point')
+/*var pts = container.selectAll('point')
   .data([[]])//[[290, 48, 100, 150, 'chip 2'], [180, 20, 100, 150, 'chip 2'], [120, 48, 100, 250, 'chip 2'], [90, 20, 100, 250, 'chip 2'], [200, 48, 100, 350, 'chip 2'], [20, 20, 100, 350, 'chip 2'], [22, 48, 190, 100, 'chip 2'], [120, 48, 730, 100, 'chip 2'], [90, 20, 730, 100, 'chip 2'], [30, 48, 730, 900, 'chip 2'], [270, 20, 730, 900, 'chip 2']])
   .enter()
   .append('circle')
@@ -292,7 +292,7 @@ var pts = container.selectAll('point')
         .duration(500)		
         .style("opacity", 0);	
   });
-
+*/
 
 
 		//returns path string d for <path d="This string">
@@ -337,9 +337,9 @@ var pts = container.selectAll('point')
     			    
     			coords.shift();
     		}		
-var bracket = container2.selectAll("path").data([{"x1":20.2,"y1":800.2,"x2":245.2,"y2":800.2, "class": "curlyBrace_XD"}, {"x1":245.2,"y1":800.2,"x2":450.2,"y2":800.2, "class": "curlyBrace_XC"}, {"x1":450.2,"y1":800.2,"x2":650.2,"y2":800.2, "class": "curlyBrace_XB"},     {"x1":650.2,"y1":800.2,"x2":965.2,"y2":800.2, "class": "curlyBrace_XA"},
-{"x1":970.2,"y1":415.2,"x2":970.2,"y2":20.2, "class": "curlyBrace"},
-{"x1":970.2,"y1":800.2,"x2":970.2,"y2":415.2, "class": "curlyBrace"}                                                                                 ])
+var bracket = container2.selectAll("path").data([{"x1":20.2,"y1":780.2,"x2":245.2,"y2":780.2, "class": "curlyBrace_XD"}, {"x1":245.2,"y1":780.2,"x2":450.2,"y2":780.2, "class": "curlyBrace_XC"}, {"x1":450.2,"y1":780.2,"x2":650.2,"y2":780.2, "class": "curlyBrace_XB"},     {"x1":650.2,"y1":780.2,"x2":969.2,"y2":780.2, "class": "curlyBrace_XA"},
+{"x1":970.2,"y1":404.2,"x2":970.2,"y2":20.2, "class": "curlyBrace"},
+{"x1":970.2,"y1":780.2,"x2":970.2,"y2":404.2, "class": "curlyBrace"}                                                                                 ])
 .enter().append("path").attr("class",function(d) {return d.class;});
     			bracket.attr("d", function(d) {
             console.log('d: ' + d.x1 + ', y1: ' + d.y1 + ', d.x2: ' + d.x2 + ', d.y2: ' + d.y2 );
